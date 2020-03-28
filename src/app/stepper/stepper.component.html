@@ -1,0 +1,59 @@
+<h1>Stepper Demo</h1>
+<hr>
+
+<mat-horizontal-stepper>
+    <mat-step label ="Shipping Address">
+        <p>Shipping Address Details</p>
+    </mat-step>
+    <mat-step label ="Billing Address">
+        <p>Billing Address Details</p>
+        <div>
+            <button mat-button  matStepperPrevious>Back</button>
+            <button mat-button  matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label ="Place Order">
+        <p>Order Details</p>
+        
+    </mat-step>
+</mat-horizontal-stepper>
+
+<hr>
+<br>
+<h6>Indevidual Steps</h6>
+
+<mat-horizontal-stepper linear>
+    <mat-step label ="Shipping Address" completed="true">
+        <p>Shipping Address Details</p>
+    </mat-step>
+    <mat-step label ="Billing Address" completed="false" optional >
+        <p>Billing Address Details</p>
+        <div>
+            <button mat-button  matStepperPrevious>Back</button>
+            <button mat-button  matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label ="Place Order" completed="false">
+        <p>Order Details</p>
+        
+    </mat-step>
+</mat-horizontal-stepper>
+<hr>
+<br>
+<h6>Vertical Stepper</h6>
+<mat-vertical-stepper linear>
+    <mat-step label ="Shipping Address" completed="true">
+        <p>Shipping Address Details</p>
+    </mat-step>
+    <mat-step label ="Billing Address" completed="false" optional >
+        <p>Billing Address Details</p>
+        <div>
+            <button mat-button  matStepperPrevious>Back</button>
+            <button mat-button  matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label ="Place Order" completed="false">
+        <p>Order Details</p>
+        
+    </mat-step>
+</mat-vertical-stepper>

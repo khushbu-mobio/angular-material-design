@@ -1,0 +1,42 @@
+<div class="mat-headline">Buttons Toggle Demo</div>
+<div>
+    <mat-button-toggle #togglebutton >Toggle</mat-button-toggle>
+    {{ togglebutton.checked }}
+</div>
+<div class="mat-title">By default checked</div>
+<div>
+    <mat-button-toggle #togglebutton2 checked>Toggle</mat-button-toggle>
+    {{ togglebutton2.checked }}
+</div>
+
+<div class="mat-title">Disable Ripple Attribute</div>
+<div>
+    <mat-button-toggle #disableRipple checked disableRipple>Toggle</mat-button-toggle>
+    {{ disableRipple.checked }}
+</div>
+
+<div class="mat-title">Disable </div>
+<div>
+    <mat-button-toggle #disableRipple  disableRipple disabled>Toggle</mat-button-toggle>
+    {{ disableRipple.checked }}
+</div>
+<hr>
+<div class="mat-headline">button togle group </div>
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+</div>
+
+<div class="mat-headline">Multiple values access</div>
+<div>
+    <mat-button-toggle-group #toggleGroupMultiple="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroupMultiple.value}}
+</div>

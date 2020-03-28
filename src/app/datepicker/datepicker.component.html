@@ -1,0 +1,48 @@
+<h1>Datepicker Demo</h1>
+<hr>
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker] = "picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  
+  <hr>
+  <h1>Display years</h1>
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker] = "pickerYear">
+    <mat-datepicker-toggle matSuffix [for]="pickerYear"></mat-datepicker-toggle>
+    <mat-datepicker #pickerYear startView="year"></mat-datepicker>
+  </mat-form-field>
+  <hr>
+
+  <h1>Multiple year</h1>
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker] = "pickerMultiYear">
+    <mat-datepicker-toggle matSuffix [for]="pickerMultiYear"></mat-datepicker-toggle>
+    <mat-datepicker #pickerMultiYear startView="multi-year"></mat-datepicker>
+  </mat-form-field>
+
+  <hr>
+  <h6>Min and Max Date</h6>
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker] = "pickerMinMax" [min]="minDate" [max]="maxDate">
+    <mat-datepicker-toggle matSuffix [for]="pickerMinMax"></mat-datepicker-toggle>
+    <mat-datepicker #pickerMinMax></mat-datepicker>
+  </mat-form-field>
+  
+  <hr>
+
+  <hr>
+  <h6>filter Date</h6>
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker] = "pickerFilter" [matDatepickerFilter]= "dateFilter">
+    <mat-datepicker-toggle matSuffix [for]="pickerFilter"></mat-datepicker-toggle>
+    <mat-datepicker #pickerFilter></mat-datepicker>
+  </mat-form-field>
+  
+  <hr>

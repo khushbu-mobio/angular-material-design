@@ -1,0 +1,71 @@
+<mat-toolbar color="primary" class="navbar">
+    <div>Codevolution</div>
+    <div>
+
+        <span routerLink="typography">Typography</span>
+        <mat-menu #buttons="matMenu">
+            <span mat-menu-item routerLink="button">Buttons</span>
+            <span mat-menu-item routerLink="button-toggle">Button-Toggle</span>
+            <span mat-menu-item routerLink="icons">ICons</span>
+            <span mat-menu-item routerLink="progress-spinner">Progress Spinner</span>
+            <span mat-menu-item routerLink="progress-bar">Progress Bar</span>
+        </mat-menu>
+        <span mat-flat-button [matMenuTriggerFor]="buttons">Buttons</span>
+
+        <mat-menu #navigation="matMenu">
+
+            <span mat-menu-item routerLink="sid-bar">Side Bar</span>
+            <span mat-menu-item routerLink="menu">Menu</span>
+        </mat-menu>
+        <span mat-flat-button [matMenuTriggerFor]="navigation">Navigation</span>
+
+        <mat-menu #list="matMenu">
+            <span mat-menu-item routerLink="list">List</span>
+            <span mat-menu-item routerLink="grid">Grid List</span>
+            <span mat-menu-item routerLink="expansion-panel">Expansion Panel</span>
+            <span mat-menu-item routerLink="card">Card</span>
+            <span mat-menu-item routerLink="tab">Tab</span>
+            <span mat-menu-item routerLink="stepper">Stepper</span>
+        </mat-menu>
+        <span mat-flat-button [matMenuTriggerFor]="list">Layout</span>
+
+        <mat-menu #formcontrols="matMenu">
+            <span mat-menu-item routerLink="input">input</span>
+            <span mat-menu-item routerLink="select">Select</span>
+            <span mat-menu-item routerLink="auto-complete">Auto Complete</span>
+            <span mat-menu-item routerLink="checkbox-radiobutton">CheckBox & RadioButton</span>
+            <span mat-menu-item routerLink="datepicker">Date Picker</span>
+            <span mat-menu-item routerLink="tooltip">Tooltip </span>
+            <span mat-menu-item routerLink="snackbar">Snackbar </span>
+            <span mat-menu-item routerLink="dialog">Dialog </span>
+        </mat-menu>
+        <span mat-flat-button [matMenuTriggerFor]="formcontrols">Form Controls</span>
+        
+        <mat-menu #popupsmodals="matMenu">
+            <span mat-menu-item routerLink="tooltip">Tooltip </span>
+            <span mat-menu-item routerLink="snackbar">Snackbar </span>
+            <span mat-menu-item routerLink="dialog">Dialog </span>
+        </mat-menu>
+        <span mat-flat-button [matMenuTriggerFor]="popupsmodals">Popups & Modals</span>
+
+        <mat-menu #datatable="matMenu">
+            <span mat-menu-item routerLink="table">Table </span>
+            <span mat-menu-item routerLink="snackbar">Snackbar </span>
+            <span mat-menu-item routerLink="dialog">Dialog </span>
+        </mat-menu>
+        <span mat-flat-button [matMenuTriggerFor]="datatable">Data Tables</span>
+
+
+
+    </div>
+</mat-toolbar>
+
+<!-- <hr>
+<a routerLink="typography">Typography</a>  &nbsp; &nbsp; &nbsp;
+<a routerLink="button">Buttons</a> &nbsp; &nbsp; &nbsp;
+<a routerLink="button-toggle">Buttons-Toggle</a> &nbsp; &nbsp; &nbsp;
+<a routerLink="icons">Icons</a> &nbsp; &nbsp; &nbsp;
+<a routerLink="progress-spinner">Progress Spinner</a> &nbsp; &nbsp; &nbsp;
+<a routerLink="progress-bar">Progress Bar</a> &nbsp; &nbsp; &nbsp;
+<hr> -->
+<router-outlet></router-outlet>

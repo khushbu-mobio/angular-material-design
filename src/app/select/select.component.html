@@ -1,0 +1,64 @@
+<h6>Select Demo</h6>
+<hr>
+<mat-form-field>
+    <mat-label >Topic</mat-label>
+    <mat-select >
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<hr>
+<mat-form-field>
+    <mat-label >Topic</mat-label>
+    <mat-select [(value)]="selectedValue">
+        <mat-option >None</mat-option>
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+    </mat-select>
+   
+</mat-form-field>
+
+{{selectedValue}}
+
+<hr>
+<hr>
+<mat-form-field>
+    <mat-label >Topic</mat-label>
+    <mat-select [(value)]="selectedValue" >
+        <mat-option >None</mat-option>
+        <mat-optgroup label ="web">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label ="mobile">
+            <mat-option value="ionic">Ionic</mat-option>
+            <mat-option value="reactnative">React Native</mat-option>
+        </mat-optgroup>
+    </mat-select>
+   
+</mat-form-field>
+
+{{selectedValue}}
+<hr>
+<mat-form-field>
+    <mat-label >Topic</mat-label>
+    <mat-select [(value)]="selectedValue" multiple>
+        <mat-option >None</mat-option>
+        <mat-optgroup label ="web">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label ="mobile">
+            <mat-option value="ionic">Ionic</mat-option>
+            <mat-option value="reactnative">React Native</mat-option>
+        </mat-optgroup>
+    </mat-select>
+   
+</mat-form-field>
+
+{{selectedValue}}

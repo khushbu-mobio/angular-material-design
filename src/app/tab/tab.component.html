@@ -1,0 +1,22 @@
+<h1>Tabs Demo</h1>
+<hr>
+<mat-tab-group>
+    <mat-tab label="Angular"> Angular Content</mat-tab>
+    <mat-tab label="react">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+<hr>
+<mat-tab-group #tabRef>
+    <mat-tab label="Angular"> Angular Content</mat-tab>
+    <mat-tab label="react">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+{{ tabRef.selectedIndex}}
+
+<hr>
+<mat-tab-group #tabRef2 (selectedTabChange)="logChange(tabRef2.selectedIndex)">
+    <mat-tab label="Angular"> Angular Content</mat-tab>
+    <mat-tab label="react">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+{{ tabRef.selectedIndex}}
